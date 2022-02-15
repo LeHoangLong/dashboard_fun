@@ -1,0 +1,4 @@
+enum CompareWith {
+  lastMonth,
+  lastYear,
+}

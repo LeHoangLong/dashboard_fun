@@ -1,0 +1,4 @@
+enum ScreenModel {
+  large,
+  small,
+}
