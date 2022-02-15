@@ -156,12 +156,14 @@ class GraphState extends State<Graph> {
           child: Container(
             width: barWidth - 5,
             alignment: const Alignment(0, 0),
-            child: Text(
-              Month.values[i].initials,
-              style: TextStyle(
-                fontSize: Theme.of(context).textTheme.bodyLarge?.fontSize,
-                fontWeight: FontWeight.bold,
-                color: Theme.of(context).colorScheme.secondary,
+            child: FittedBox(
+              child: Text(
+                Month.values[i].initials,
+                style: TextStyle(
+                  fontSize: Theme.of(context).textTheme.bodyLarge?.fontSize,
+                  fontWeight: FontWeight.bold,
+                  color: Theme.of(context).colorScheme.secondary,
+                ),
               ),
             ),
           ),
